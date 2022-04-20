@@ -1,0 +1,19 @@
+<resources>
+	<fitContributions>
+		<fitField id="0" displayInActivitySummary="true"  
+			sortOrder="45" precision="2"  
+			dataLabel="@Strings.snack_one" unitLabel="@Strings.snack_one_unit"/>
+		<fitField id="1" displayInActivitySummary="true"  
+			sortOrder="46" precision="2"  
+			dataLabel="@Strings.snack_two" unitLabel="@Strings.snack_two_unit"/>
+		<fitField id="2" displayInActivitySummary="true"  
+			sortOrder="47" precision="2"  
+			dataLabel="@Strings.snack_thr" unitLabel="@Strings.snack_thr_unit"/>
+		<fitField id="3" displayInActivitySummary="true"  
+			sortOrder="48" precision="2"  
+			dataLabel="@Strings.snack_fou" unitLabel="@Strings.snack_fou_unit"/>
+		<fitField id="4" displayInActivitySummary="true"  
+			sortOrder="49" precision="2"  
+			dataLabel="@Strings.snack_fiv" unitLabel="@Strings.snack_fiv_unit"/>
+	</fitContributions>
+</resources>

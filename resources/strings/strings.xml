@@ -1,0 +1,35 @@
+<strings>
+    <string id="AppName">Magical Miles Snack Tracker</string>
+    <string id="label">Snack on</string>
+    <string id="err_no_calorie_info">No calorie info</string>
+    
+    <string id="item_five_sec">5 Seconds</string>
+    <string id="item_ten_sec">10 Seconds</string>
+    
+    <string id="snack_one">Ice Cream Bars</string>
+    <string id="snack_one_unit">ice cream bars</string>
+    <string id="snack_one_unit_sm"> bars</string>
+    <string id="snack_two">Churros</string>
+    <string id="snack_two_unit">churros</string>
+    <string id="snack_two_unit_sm"> churros</string>
+    <string id="snack_thr">Soft Pretzels</string>
+    <string id="snack_thr_unit">soft pretzels</string>
+    <string id="snack_thr_unit_sm"> pretzels</string>
+    <string id="snack_fou">Dole Whips</string>
+    <string id="snack_fou_unit">Dole whips</string>
+    <string id="snack_fou_unit_sm"> whips</string>
+    <string id="snack_fiv">Turkey Legs</string>
+    <string id="snack_fiv_unit">turkey legs</string>
+    <string id="snack_fiv_unit_sm"> legs</string>
+    
+    <string id="motivation_one_label">Back off</string>
+    <string id="motivation_one">balloon ladies!</string>
+    <string id="motivation_two_label">Do! Or do not!</string>
+    <string id="motivation_two">There is no try!</string>
+    <string id="motivation_thr_label">Mmm...</string>
+    <string id="motivation_thr">cheese!</string>
+    <string id="motivation_fou_label">Dig a little</string>
+    <string id="motivation_fou">deeper!</string>
+    <string id="motivation_fiv_label">Enjoy every</string>
+    <string id="motivation_fiv">magical mile!</string>
+</strings>
