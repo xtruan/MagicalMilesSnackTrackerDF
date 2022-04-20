@@ -2,6 +2,7 @@ import Toybox.Activity;
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
+//import Toybox.System;
 
 class MagicalMilesSnackTrackerView extends WatchUi.DataField {
 	
@@ -101,9 +102,18 @@ class MagicalMilesSnackTrackerView extends WatchUi.DataField {
         } else {
             View.setLayout(Rez.Layouts.MainLayout(dc));
             var labelView = View.findDrawableById("label");
-            labelView.locY = labelView.locY - 20;
             var valueView = View.findDrawableById("value");
-            valueView.locY = valueView.locY + 15;
+            
+            var height = dc.getHeight();
+            if (height < 200) {
+            	labelView.locY = labelView.locY - (height / 5);
+            	valueView.locY = valueView.locY + (height / 5);
+            } else {
+            	labelView.locY = labelView.locY - (height / 8);
+            	valueView.locY = valueView.locY + (height / 8);
+            }
+            
+            //System.println(height);
         }
 
         (View.findDrawableById("label") as Text).setText(Rez.Strings.label);
@@ -181,14 +191,27 @@ class MagicalMilesSnackTrackerView extends WatchUi.DataField {
         var value = View.findDrawableById("value") as Text;
         var text = getDisplayText();
         
-        if (text.length() < 9) {
-        	value.setFont(Graphics.FONT_MEDIUM);
-        } else if (text.length() < 11) {
-        	value.setFont(Graphics.FONT_SMALL);
-        } else if (text.length() < 13) {
-        	value.setFont(Graphics.FONT_TINY);
+        if (dc.getHeight() < 200) {
+	        if (text.length() < 9) {
+	        	value.setFont(Graphics.FONT_MEDIUM);
+	        } else if (text.length() < 11) {
+	        	value.setFont(Graphics.FONT_SMALL);
+	        } else if (text.length() < 13) {
+	        	value.setFont(Graphics.FONT_TINY);
+	        } else {
+	        	value.setFont(Graphics.FONT_TINY);
+	        }
         } else {
-        	value.setFont(Graphics.FONT_TINY);
+        	label.setFont(Graphics.FONT_LARGE);
+        	if (text.length() < 12) {
+	        	value.setFont(Graphics.FONT_LARGE);
+	        } else if (text.length() < 14) {
+	        	value.setFont(Graphics.FONT_MEDIUM);
+	        } else if (text.length() < 16) {
+	        	value.setFont(Graphics.FONT_SMALL);
+	        } else {
+	        	value.setFont(Graphics.FONT_SMALL);
+	        }
         }
         value.setText(text);
         
